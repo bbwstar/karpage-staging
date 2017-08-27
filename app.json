@@ -1,0 +1,107 @@
+{
+  "name": "karpage-staging",
+  "description": "karpage creation",
+  "scripts": {
+  },
+  "env": {
+    "API_SUBDOMAIN": {
+      "required": true
+    },
+    "APPSIGNAL_PUSH_API_KEY": {
+      "required": true
+    },
+    "DEFAULT_MAIL_FROM": {
+      "required": true
+    },
+    "FACEBOOK_APP_ID": {
+      "required": true
+    },
+    "FACEBOOK_SECRET": {
+      "required": true
+    },
+    "GOOGLE_ANALYTICS_ACCOUNT": {
+      "required": true
+    },
+    "HOSTNAME": {
+      "required": true
+    },
+    "IMGIX_SOURCE": {
+      "required": true
+    },
+    "LANG": {
+      "required": true
+    },
+    "LOGENTRIES_TOKEN": {
+      "required": true
+    },
+    "ONESIGNAL_API_KEY": {
+      "required": true
+    },
+    "ONESIGNAL_APP_ID": {
+      "required": true
+    },
+    "POSTMARK_API_KEY": {
+      "required": true
+    },
+    "POSTMARK_API_TOKEN": {
+      "required": true
+    },
+    "POSTMARK_SMTP_SERVER": {
+      "required": true
+    },
+    "POSTMARK_TEMPLATE_PASSWORD_RESET": {
+      "required": true
+    },
+    "POSTMARK_TEMPLATE_WELCOME": {
+      "required": true
+    },
+    "RACK_ENV": {
+      "required": true
+    },
+    "RAILS_ENV": {
+      "required": true
+    },
+    "RAILS_SERVE_STATIC_FILES": {
+      "required": true
+    },
+    "REDIS_URL": {
+      "required": true
+    },
+    "S3_ACCESS_KEY": {
+      "required": true
+    },
+    "S3_BUCKET": {
+      "required": true
+    },
+    "S3_HOST": {
+      "required": true
+    },
+    "S3_REGION": {
+      "required": true
+    },
+    "S3_SECRET_KEY": {
+      "required": true
+    },
+    "SECRET_KEY_BASE": {
+      "required": true
+    },
+    "SIDEKIQ_PASSWORD": {
+      "required": true
+    },
+    "SIDEKIQ_USERNAME": {
+      "required": true
+    }
+  },
+  "formation": {
+  },
+  "addons": [
+    "logentries",
+    "heroku-postgresql",
+    "heroku-redis"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/ruby"
+    }
+  ]
+}
